@@ -1,3 +1,5 @@
+// Внесені зміни в код і подальша його заміна на інший.
+
 #include <iostream>
 #include <math.h>
 #include <iomanip>
@@ -12,12 +14,12 @@ int main()
 	cout << "Введіть x=";
 	cin >> x;
 
-	int sum = 0;
-	for (int n = 1; n <= 5; n++) {
-		sum += pow(n, 3);
+	double product = 1.0;
+	for (int i = 1; i <= 10; i++) {
+		product *= log (i*x);
 	}
-	double y = (cos(sum) + log(x)) / pow(tan(x), 2);
-	cout << setprecision(4);
-	cout << "Y=" << y << endl;
+	double Z = sin(product);
+	cout << "Z=" << Z << endl;
 
 	return 0;
+}
